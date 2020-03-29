@@ -1,0 +1,2 @@
+# debianpost
+post install firmware
