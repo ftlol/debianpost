@@ -1,0 +1,6 @@
+Add "contrib" and "non-free" components to /etc/apt/sources.list, for example:
+# Debian 10 "Buster"
+deb http://deb.debian.org/debian buster main contrib non-free
+apt-get update
+apt-get install firmware-linux-nonfree libgl1-mesa-dri xserver-xorg-video-ati
+dmesg | grep -E 'drm|radeon' | grep -iE 'firmware|microcode'
